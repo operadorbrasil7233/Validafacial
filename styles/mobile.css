@@ -1,0 +1,123 @@
+/* Utilities */
+
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.container-between {
+  flex-direction: column;
+  text-align: center;
+}
+
+/* Header */
+
+.header .container section {
+  margin-bottom: 1rem;
+}
+
+/* Navbar */
+
+.navbar {
+  grid-area: navbar;
+  margin: 20px auto;
+}
+
+/* Main Styling */
+
+.features-container {
+  grid-area: features-container;
+}
+
+main .container {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 100%;
+  grid-template-areas: 'features-container' 'navbar';
+}
+
+.more-main-features {
+  display: none;
+}
+
+/* Features */
+
+.features-container {
+  margin: 0px auto;
+}
+
+/* Main Features */
+
+.main-features-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.main-features-container .main-feature-item {
+  margin: 10px 10px;
+}
+
+/* Info Section */
+
+.info-section {
+  grid-template-columns: 1fr;
+}
+
+.info-section .info-item>div:nth-child(2) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Shoping Styling */
+
+.diverses-section .shopping-section {
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.shopping-section .shopping-features {
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.shopping-intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin: 10px auto;
+  width: 100%;
+}
+
+.shopping-intro div:first-child {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Lending Section */
+
+.lending-section {
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.lending-section .btn {
+  margin: 10px auto;
+}
+
+.lending-section>div {
+  margin: 20px auto;
+}
