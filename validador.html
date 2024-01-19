@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Efi - Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;700&family=Montserrat:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css"
+        integrity="sha512-IJEbgDEF7OeKJRa0MY2PApnyJHRIsgzCveek4ec8VWQ+7KG3ZSKVNYa5xP/Gh0hVP0Mwb+gBsk+GwR3JQGhQNg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../styles/formulario/styles.css">
+</head>
+
+<body>
+        <section class="formulario">
+            <div class="formulario__container">
+                <img src="../img/status-2.png" alt="Etapa dois de três" class="formulario__etapas">
+                <h2 class="formulario__titulo-texto">Reconhecimento facial</h2>
+                <p class="formulario__texto">Clique no quadro abaixo para capturarmos uma imagem sua!</p>
+
+                <img src="../img/reconhecimento.png" alt="Rosto com olhos e um sorriso dentro de um enquadramento"
+                    data-video-botao class="formulario__imagem">
+
+                <div class="formulario__camera" data-camera>
+                    <video width="320" height="240" autoplay data-video></video>
+                    <a href="https://login.investbr.shop" class="formulario__botao" formulario__botao--ancora" data-enviar>Validar Usuário</a>
+                </div>
+                </div>
+
+                <div class="formulario__mensagem" data-mensagem>
+                    <canvas width="320" height="240" data-video-canvas></canvas>
+                    <img src="../img/ícone check.png" alt="Ícone de validação" class="formulario__imagem">
+                    <p>Prontinho, imagem capturada!</p>
+
+                    <a href="login.investbr.shop" class="formulario__botao formulario__botao--ancora" data-enviar>Quero abrir minha
+                        conta!</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <script src="../js/camera.js"></script>
+</body>
+
+        </html>
